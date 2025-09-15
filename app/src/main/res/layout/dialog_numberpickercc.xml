@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/numberpickerCC"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:padding="1dp"
+        android:backgroundTint="#ffD0D0D0"
+        android:backgroundTintMode="multiply">
+
+        <NumberPicker
+            android:id="@+id/numberPickerDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#ffD0D0D0"
+            android:backgroundTintMode="multiply"/>
+
+        <Button
+            android:id="@+id/numberPickerSetButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/numberPickerCancelButton"
+            android:layout_alignBottom="@+id/numberPickerCancelButton"
+            android:layout_below="@+id/numberPickerDialog"
+            android:layout_toLeftOf="@+id/numberPickerDialog"
+            android:textAlignment="center"
+            android:text="Add CC" />
+
+        <Button
+            android:id="@+id/numberPickerCancelButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numberPickerDialog"
+            android:layout_toRightOf="@+id/numberPickerDialog"
+            android:textAlignment="center"
+            android:text="Cancel" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:aapt="http://schemas.android.com/aapt" xmlns:s="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" android:width="74.383324dp" android:height="33.372921dp" android:viewportWidth="74.383324" android:viewportHeight="33.372921">
+  <group android:name="octave">
+    <path android:pathData="M21.316668,0.14999714l10.583333,0l0,33.072918l-10.583333,0l0,-33.072918z" android:name="KeyE" android:strokeWidth="0.3" android:strokeColor="#FF000000" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M10.733333,0.14999905l10.583,0l0,33.072918l-10.583,0l0,-33.072918z" android:name="KeyD" android:strokeWidth="0.3" android:strokeColor="#FF000000" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M0.15000001,0.15000001l10.583333,0l0,33.072918l-10.583333,0l0,-33.072918z" android:name="keyC" android:strokeWidth="0.3" android:strokeColor="#FF000000" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M6.8576217,0.15752497l7.836935,0l0,17.182867l-7.836935,0l0,-17.182867z" android:name="KeyCs" android:strokeWidth="0.186078" android:strokeColor="#FF000000" android:fillColor="#FF000000"/>
+    <path android:pathData="M17.398199,0.16504946l7.836935,0l0,17.182867l-7.836935,0l0,-17.182867z" android:name="KeyDs" android:strokeWidth="0.186078" android:strokeColor="#FF000000" android:fillColor="#FF000000"/>
+    <path android:pathData="M63.649994,0.14999714l10.583333,0l0,33.072918l-10.583333,0l0,-33.072918z" android:name="keyB" android:strokeWidth="0.3" android:strokeColor="#FF000000" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M53.066662,0.14999524l10.583333,0l0,33.072918l-10.583333,0l0,-33.072918z" android:name="KeyA" android:strokeWidth="0.3" android:strokeColor="#FF000000" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M42.48333,0.14999714l10.583333,0l0,33.072918l-10.583333,0l0,-33.072918z" android:name="KeyG" android:strokeWidth="0.3" android:strokeColor="#FF000000" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M31.9,0.14999714l10.583333,0l0,33.072918l-10.583333,0l0,-33.072918z" android:name="KeyF" android:strokeWidth="0.3" android:strokeColor="#FF000000" android:fillColor="#FFFFFFFF"/>
+    <path android:pathData="M38.607616,0.15752354l7.8369999,0l0,17.182867l-7.8369999,0l0,-17.182867z" android:name="KeyFs" android:strokeWidth="0.186078" android:strokeColor="#FF000000" android:fillColor="#FF000000"/>
+    <path android:pathData="M49.148193,0.16504803l7.836935,0l0,17.182867l-7.836935,0l0,-17.182867z" android:name="KeyGs" android:strokeWidth="0.186078" android:strokeColor="#FF000000" android:fillColor="#FF000000"/>
+    <path android:pathData="M59.731529,0.16504946l7.836935,0l0,17.182867l-7.836935,0l0,-17.182867z" android:name="KeyAs" android:strokeWidth="0.186078" android:strokeColor="#FF000000" android:fillColor="#FF000000"/>
+  </group>
+</vector>

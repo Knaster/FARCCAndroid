@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="continuousMappables">
+        <item tag="">Nothing</item>
+        <item>Pressure modifier</item>
+        <item>Pressure baseline</item>
+        <item>Mute position</item>
+        <item>Solenoid force multiplier</item>
+        <item>Harmonic shift</item>
+    </string-array>
+</resources>

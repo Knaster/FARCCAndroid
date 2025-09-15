@@ -1,0 +1,31 @@
+Main pages
+	Settings
+		Tuner
+		Console
+		Scale editor / change scale preset
+		Basic settings with calibrations and tuning parameters
+	Controllers
+		XY Pad
+		Keyboard roll
+		Sensor
+		Quick change buttons
+		Config
+			XY Pad
+				Map X and Y to commands
+				Map multi-tap
+				Map multi-hold
+				AD for X
+				AD for Y
+			Sensors
+				List all sensors
+				List all outputs for that sensor
+				Map each output
+			Quick change buttons
+				Map each button
+			Keyboard roll
+				
+				
+				
+				
+Controller works:
+Controller Raw -> Modifier -> Mapping

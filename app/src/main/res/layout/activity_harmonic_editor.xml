@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/harmonicEditMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HarmonicEditor">
+<!--
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="@dimen/seekbar_width"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <SeekBar
+            android:id="@+id/seekbarTest1"
+            android:layout_width="392dp"
+            android:layout_height="@dimen/seekbar_width"
+            android:layout_gravity="center"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progressbar"
+            android:rotation="270"
+            android:scaleY="3"
+            android:thumb="@drawable/seek_thumb" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="@dimen/seekbar_width"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout1"
+        app:layout_constraintVertical_bias="1.0">
+
+        <SeekBar
+            android:id="@+id/seekbarTest2"
+            android:layout_width="392dp"
+            android:layout_height="@dimen/seekbar_width"
+            android:layout_gravity="center"
+            android:progress="50"
+            android:progressDrawable="@drawable/custom_progressbar"
+            android:rotation="270"
+            android:scaleY="3"
+            android:thumb="@drawable/seek_thumb" />
+
+    </FrameLayout>
+-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/testtext"
+        android:text="beepboop"/>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@+id/harmonicEditMain"
+        android:id="@+id/dynamicHarmonicContents"
+        android:tag="dynamicHarmonicContents">
+
+    </androidx.fragment.app.FragmentContainerView>
+<!--
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/harmonicFragmentContainer"
+        android:layout_width="54dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        android:tag="fcw"
+        tools:layout="@layout/harmonic_fragment" />
+-->
+<!--    class="com.example.FARCCAndroid.HarmonicFragment" -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="booleanMappables">
+        <item>Nothing</item>
+        <item>MIDI &amp; Mute sustain</item>
+        <item>MIDI sustain</item>
+        <item>Mute sustain</item>
+    </string-array>
+</resources>

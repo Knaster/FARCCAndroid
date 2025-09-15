@@ -1,0 +1,46 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Define the background properties like color etc -->
+    <item android:id="@android:id/background">
+<!--        <shape>
+            <solid android:color="#000000"/>
+        </shape>-->
+        <shape
+            android:shape="rectangle">
+            <stroke
+                android:color="#000000"
+                android:width="@dimen/seek_bar_thickness"
+                android:height="@dimen/seek_bar_thickness"/>
+            <solid android:color="#000000"/>
+        </shape>
+    </item>
+
+    <!-- Define the progress properties like start color, end color etc -->
+    <item android:id="@android:id/progress">
+        <clip>
+<!--            <shape>
+                <solid android:color="#8080FF"/>
+            </shape>
+-->
+            <shape
+                android:shape="rectangle">
+                <stroke
+                    android:color="#8080FF"
+                    android:width="@dimen/seek_bar_thickness"
+                    android:height="@dimen/seek_bar_thickness"/>
+                <solid android:color="#8080FF"/>
+            </shape>
+        </clip>
+    </item>
+
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape
+                android:shape="line">
+                <stroke
+                    android:color="#4040FF"
+                    android:width="@dimen/seek_bar_thickness"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

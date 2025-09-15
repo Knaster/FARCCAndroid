@@ -1,0 +1,171 @@
+[irq]mc:1
+[irq]m:0,bcu:66.00
+[irq]m:0,bmv:6.60
+[irq]m:0,bpki:7.00
+[irq]m:0,bpkp:500.00
+[irq]m:0,bpkd:200.00
+[irq]m:0,bpie:0.10
+[irq]m:0,bmt:1000
+[irq]m:0,mfmp:65535
+[irq]m:0,mhmp:0
+[irq]m:0,mrp:0
+[irq]m:0,mbo:0
+[irq]m:0,bmsx:539.49
+[irq]m:0,bmsi:19.05
+[irq]m:0,bppx:50000
+[irq]m:0,bppe:2000
+[irq]m:0,bppr:0
+[irq]m:0,bch:0
+[irq]m:0,bchb:64
+[irq]m:0,bchbn:64
+[irq]m:0,bcha:0
+[irq]m:0,bchsh:0
+[irq]m:0,bchsr:12
+[irq]m:0,bchs5:0
+[irq]m:0,bcf:66.00
+[irq]m:0,bhsc:2:'just intonation':"equal temperament"
+[irq]m:0,bhs:0
+[irq]mcfc:1
+[irq]mcf:0
+[irq]m:0,bchbn:64
+[irq]m:0,sxf:65535
+[irq]m:0,sif:0
+[irq]m:0,sed:15000
+[irq]m:0,ba:0
+[irq]m:0,bac:1
+[irq]mrc:127
+[irq]acm:0:'bcha:value/1327.716667-20'
+[irq]acm:1:'bchs5:"deadband(value-32236, 20)/2.425"'
+[irq]acm:2:'bchsh:"deadband((value-32600)*0.49064, 250)"'
+[irq]acm:3:'bpb:value'
+[irq]acm:4:'se:value'
+[irq]acm:5:'bmr:bool(value-10000),bpid:1,bcsm:0,bpe:bool(value-10000),bpr:ibool(value-10000),bph:ibool(value-10000)'
+[irq]acm:6:'sfm:"deadband(1/65535*value,0.002)"'
+[irq]acm:7:'msp:value'
+[irq]m:0,bpkp:500.00
+[irq]m:0,bpki:7.00
+[irq]m:0,bpkd:200.00
+[irq]m:0,bpie:0.10
+[irq]m:0,bpme:50.00
+[hlp]:"Below is a list of avaliable commands given in both short and long form, either works. The number and type(s) of arguments are listed afterwards and a brief description. Command usage: command:argument1:argument2 [etc]"
+[hlp][glo]:requestinfo|rqi:command:"Retrives rather than sets data associated with a command, if appliccable"
+[hlp][glo]:module|m:0-15:"Sets the currently active string module"
+[hlp][glo]:modulecount|mc:-:"Returns the number of string modules detected"
+[hlp][glo]:debugprint|dp:command|usb|hardware|undefined|priority|error|inforequest|expressionparser|debug:1|0:"Turns on or off serial feedback for the given item"
+[hlp][glo]:version|ver:-:"Gets the current firmware version"
+[hlp][glo]:globalsaveallparameters|gsap:-:"Saves all avaliable parameters"
+[hlp][glo]:globalloadallparameters|glap:-:"Loads all avaliable parameters"
+[hlp][glo]:globalresetallparameters|grap:-:"Resets all saved parameters"
+[hlp][glo]:globaluservariable|guv:variable(0-9):value:"Set user variable 0-9 to value"
+[hlp][glo]:midiconfiguration|mcf:int:"Sets the current MIDI configuration"
+[hlp][glo]:midiconfigurationadd|mcfa:-:"Adds a new MIDI configuration"
+[hlp][glo]:midiconfigurationremove|mcfr:int:"Remove the specified MIDI configuration"
+[hlp][glo]:midiconfigurationcount|mcfc:-:"Returns the number of MIDI configurations"
+[hlp][glo]:midiconfigurationname|mcfn:string:"Set the name of the MIDI configuration (for request, argument is index of configuration to return name for (optional))"
+[hlp][glo]:midieventhandler|mev:noteon|noteoff|pat|cc:(0-127)|cat|pb|pc:"Set the MIDI event handling string in the current configuration"
+[hlp][glo]:midieventhandlerccremove|mevcr:cc(0-127):"remove CC from list"
+[hlp][glo]:midiconfigurationdefaults|mcfd:-:"Reverts the current configuration to default values and CCs"
+[hlp][glo]:midireceivechannel|mrc:-:"Sets the MIDI receive channel of the current configuration. 1-16 sets specific channel, any other value for OMNI"
+[hlp][glo]:midiallnotesoff|mano:1|0:"Clear the entire buffer of MIDI notes held"
+[hlp][glo]:adccommandmap|acm:channel:command string:"Sets the command string invoked when the value on ADC channel [channel] changes"
+[hlp][glo]:adcdefaults|acd:-Reverts all ADC command strings to default values:""
+[hlp][glo]:adcread|adcr:channel:value:"Sent when a new value is presented on one of the ADC channels, cannot be invoked"
+[hlp][glo]:adcsettings|adcs:channel:averages:interrupterrorthreshold:continuouserrorthreshold:continuoustimeout:"Explain ADC settings here"
+[hlp][glo]:expressionparserevaluate|epev:expression:"Evaluates an arithmetric expression and sends back the output"
+[hlp][glo]:testadclatency|tal:0-65535:"Test ADC Latency"
+[hlp][glo]:testadclatencyreturn|talr:-:"Return from test"
+[hlp][glo]:testadcminmax|tamm:channel:"Measure min/max value for a given channel and resets the counter"
+[hlp][glo]:reset|rst:0|1:"Resets the Ekdahl FAR, conditional"
+[hlp][glo]:nick|nick:string:"Sets the nickname of this unit"
+[hlp]:"These commands are specific for the currently selected string module"
+[hlp][str]:bow|b:0-15:"Sets the currently selected bow"
+[hlp][str]:bowpid|bpid:1|0:"Sets the bow PID on/off"
+[hlp][str]:bowpidki|bpki:float:"Sets the Ki parameter of the PID of the selected bow"
+[hlp][str]:bowpidkp|bpkp:float:"Sets the Kp parameter of the PID of the selected bow"
+[hlp][str]:bowpidkd|bpkd:float:"Sets the Kd parameter of the PID of the selected bow"
+[hlp][str]:bowpidintegratorerror|bpie:float:"Sets the lower threshold of error values for the PID integrator to ignore of the selected bow"
+[hlp][str]:bowpidr|bpir:-:"Resets the PID of the selected bow"
+[hlp][str]:bowpidmaxerror|bpme:float:"Maximum error to correct in each PID loop, essentially sets acceleration"
+[hlp][str]:bowpidpeakerror|bpperr:float:"Get latest PID peak error"
+[hlp][str]:bowcontrolfrequency|bcf:float:"Bow motor speed frequency in hertz, requires that PID is turned on"
+[hlp][str]:bowcontrolfundamental|bcu:float:"Bow fundamental frequency, all harmonics are calculated from this number"
+[hlp][str]:bowcontrolharmonic|bch:int:"Bow motor speed in terms of a harmonic number. A ratio is taken from the given harmonic in the current harmonic list, the ratio is then multiplied by the bow fundamental frequency"
+[hlp][str]:bowcontrolharmonicadd|bcha:int:"Additative version of bowcontrolharmonic, the number is given is added to the harmonic given"
+[hlp][str]:bowcontrolharmonicbase|bchb:int:"Same as bowcontrolharmonic but where the harmonic number is based on a MIDI note given by bowcontrolbasenote"
+[hlp][str]:bowcontrolharmonicbasenote|bchbn:0-127:"Sets the MIDI base note of the string, used in conjunction with bowcontrolharmonicbase"
+[hlp][str]:bowcontrolharmonicshift|bchsh:-32767-32767:"Setting shift from the currently playing harmonic where 32767 equals the entire harmonic shift range shifted up"
+[hlp][str]:bowcontrolharmonicshiftrange|bchsr:0-36:"Set the number of harmonic numbers that constitutes the entire harmonic shift"
+[hlp][str]:bowcontrolharmonicshift5|bchs5:-32767-32767:"Setting shift from the currently playing harmonic over 5 octaves where 32767 equals 5 octaves shift up from the fundamental"
+[hlp][str]:bowcontrolspeedmode|bcsm:0|1:"Bow motor speed mode, 0 = Automatic and 1 = Manual"
+[hlp][str]:bowharmonicseries|bhs:int:"Get/set the current harmonic series"
+[hlp][str]:bowharmonicseriesdata|bhsd:slot:name:ratios:"Sets all data for the harmonic series in the given slot"
+[hlp][str]:bowharmonicseriesratio|bhsr:harmonic:ratio:"Sets the ratio of the given harmonic in current harmonic series, will increase the list size if needed to adress the harmonic"
+[hlp][str]:bowharmonicseriesratioremove|bhsrr:ratio:"Remove the harmmonic ratio given in the current series and shift any ratios accordingly. Cannot remove all ratios"
+[hlp][str]:bowharmonicseriescount|bhsc:-:"Returns the number of harmonic series in the list and their IDs"
+[hlp][str]:bowharmonicseriessave|bhss:series:name:"Saves the current harmonic series in the slot given, or if the slot is out of range, creates a new one at the end of the list"
+[hlp][str]:bowharmonicseriesremove|bhsrm:series:"Remove the series given and shift any series accordingly. Cannot remove all series"
+[hlp][str]:bowstatus|bs:-:"Prints status information for the selected bow"
+[hlp][str]:pickupstringfrequency|psf:-:"Returns the fundamental tone calculated from the current audio signal if appliccable"
+[hlp][str]:pickupaudiopeak|pap:-:"Returns the peak amplitude of the current audio signal"
+[hlp][str]:pickupaudiorms|par:-:"Returns the RMS amplitude of the current audio signal"
+[hlp][str]:bowdebugmeasuretimetotarget|bdmtt:float:"Measure the time it takes to change from the current frequency to the target frequency"
+[hlp][str]:bowhome|bh:-:"Homing bow, used at startup and in case of the bow loosing position"
+[hlp][str]:bowcalibrateall|bca:-:"Performs all calibration routines on the selected bow, see below for routines performed"
+[hlp][str]:bowcalibratespeed|bcs:-:"Finds the minimum and maximum bow speed of the selected bow"
+[hlp][str]:bowcalibratepressure|bcp:-:"Finds the minimum and maximum bow pressure of the selected bow"
+[hlp][str]:bowmotorrun|bmr:1|0:"Set bow motor run on/off"
+[hlp][str]:bowmotordirectpwm|bmdp:0-65535:"Bow motor direct power in 16-bit PWM values, requires that the PID is turned off"
+[hlp][str]:bowmotortimeout|bmt:ms(0-65535):"Bow motor shutdown timeout after bow having been put into the rest position"
+[hlp][str]:bowmotorspeedmax|bmsx:0-65535:"Bow motor maximum speed limit"
+[hlp][str]:bowmotorspeedmin|bmsi:0-65535:"Bow motor minimum speed limit"
+[hlp][str]:bowmotorvoltage|bmv:1.2-9:"Bow motor voltage"
+[hlp][str]:bowmotorfrequency|bmf:-:"Bow motor reported frequency"
+[hlp][str]:bowmotorcurrent|bmc:0-3:"Bow motor reported current use"
+[hlp][str]:bowmotorcurrentlimit|bmcl:0-3:"Bow motor current limit (A)- !WARNING! Can ruin your instrument if changed"
+[hlp][str]:bowmotorpowerlimit|bmpl:0-255:"Bow motor power limit (W) - !WARNING! Can ruin your instrument if changed"
+[hlp][str]:bowmotorfaultcommands|bmfc:command list:"Commands to execute when a motor fault is tripped - !WARNING! Can ruin your instrument if changed"
+[hlp][str]:bowmotoroverpowercommands|bmopc:command list:"Commands to execute when motor is over the power limit - !WARNING! Can ruin your instrument if changed"
+[hlp][str]:bowmotoremergencystop|bmes:ms (0-65535):"Immediately stops the bowing motor and doesn't allow it to start again until the cool down period given in the first argument has lapsed (milliseconds)"
+[hlp][str]:bowpressurebaseline|bpb:0-65535:"Bow pressure baseline, modulation is added to this point upward"
+[hlp][str]:bowpressuremodifier|bpm:0-65535:"Bow pressure modulation, added to the baseline"
+[hlp][str]:bowpressurerest|bpr:0|1:"Puts the bow pressure in the resting position (conditional)"
+[hlp][str]:bowpressureengage|bpe:0|1:"Puts the bow pressure in the engage position (conditional)"
+[hlp][str]:bowpressurepositionmax|bppx:0-65535:"Bow pressure stall/maximum position"
+[hlp][str]:bowpressurepositionengage|bppe:0-65535:"Bow pressure touch/minimum position"
+[hlp][str]:bowpressurepositionrest|bppr:0-65535:"Bow pressure rest position"
+[hlp][str]:bowpressureengagespeed|bpes:1 - 100?:"Bow pressure movement speed when engaging or disengaging"
+[hlp][str]:bowpressuremodulationspeed|bpms:0.1 - 10:"Bow pressure movement speed while engaged"
+[hlp][str]:bowpressurehold|bph:0|1:"Sets bow hold on/off"
+[hlp][str]:solenoid|so:int:"Sets the currently selected solenoid"
+[hlp][str]:solenoidengage|se:0-65535:"Sets the solenoid engagement of the current bow using the 1st argument as hardness"
+[hlp][str]:solenoiddisengage|sd:0-1:"Sets the solenoid disengagement of the current bow, an argument of '0' will leave the solenoid at its current state while any other value will disengage the solenoid"
+[hlp][str]:solenoidmaxforce|sxf:0 - 65535:"Set solenoid maximum usable force"
+[hlp][str]:solenoidminforce|sif:0 - 65535:"Set solenoid minimum usable force"
+[hlp][str]:solenoidforcemultiplier|sfm:0 - 1:"Set solenoid force multiplier"
+[hlp][str]:solenoidengageduration|sed:uS:"Sets the duration of the solenoid hit in uS, if a value of 0 is set the solenoid will not disengage until a solenoiddisengage command has been given"
+[hlp][str]:mutesetposition|msp:0-65535:"Set mute position"
+[hlp][str]:mutefullmute|mfm:1|0:"Put mute in full mute position (conditional)"
+[hlp][str]:mutehalfmute|mhm:1|0:"Put mute in half mute position (conditional)"
+[hlp][str]:muterest|mr:1|0:"Put mute in rest position (conditional)"
+[hlp][str]:mutesavefull|msf:1|0:"Save current mute position as full mute position (conditional)"
+[hlp][str]:mutesavehalf|msh:1|0:"Save current mute position as half mute position (conditional)"
+[hlp][str]:mutesaverest|msr:1|0:"Save current mute position as mute rest position (conditional)"
+[hlp][str]:mutefullmuteposition|mfmp:0-65535:"Mute full mute position"
+[hlp][str]:mutehalfmuteposition|mhmp:0-65535:"Mute half mute position"
+[hlp][str]:muterestposition|mrp:0-65535:"Mute rest position"
+[hlp][str]:mutesustain|ms:0|1:"Setting sustain on (1) or off (0)"
+[hlp][str]:mutebackoff|mbo:0-65535:"Setting the time that the mute stays in the mutefullmute position before automatically going into rest, set in mS"
+[hlp][str]:mutehome|mh:-:"Rehome mute"
+[hlp][str]:mutecalibrate|mca:-:"Calibrate mute settings"
+[hlp][str]:bowactuator|ba:actuator:"Sets and loads the actuator given"
+[hlp][str]:bowactuatorremove|bar:actuator:"Remove bow actuator"
+[hlp][str]:bowactuatorsave|bas:-:"Save current bow parameters into currently selected bow actuator"
+[hlp][str]:bowactuatordata|bad:actuator:engagepressure:stallpressure:restposition:id:"Set data of bow actuator [actuator]"
+[hlp][str]:bowactuatorcount|bac:-:"Returns the amount of saved bow actuators"
+[hlp][str]:nooperation|nop:-:"Do absolutely, positively, nothing"
+[irq]m:0,nop
+[irq]m:0,bhsd:0:'just intonation':1.0000:1.0667:1.1250:1.2000:1.2500:1.3333:1.4062:1.5000:1.6000:1.6667:1.8000:1.8750
+[irq]m:0,bhsd:1:"equal temperament":1.0000:1.0595:1.1225:1.1892:1.2599:1.3348:1.4142:1.4983:1.5874:1.6818:1.7818:1.8878
+[irq]mcfn:0:default
+[irq]mev:noteon:'m:0,b:0,bchb:note,bpid:1,bpe:1,mr:1,se:(velocity*512)*(1-notecount),bcsm:0',mev:noteoff:'m:0,b:0,bpr:ibool(notecount),bcsm:0',mev:pat:'m:0,bchsh:(pressure * 303 * 1)',mev:pb:'m:0,b:0,bchsh:pitch*4',mev:cat:'m:0,b:0,bpm:(pressure*512)',mev:pc:'',mev:cc:64:''
+[irq]m:0,bad:0:2000:50000:0:'default'

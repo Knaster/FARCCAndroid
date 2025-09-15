@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="12sp"
+    android:textColor="#000000"
+    android:text="[irq]acm:1:'bchs5:&quot;deadband(value-32236, 20)/2.425&quot;'"/>
